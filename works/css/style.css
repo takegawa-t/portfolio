@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/*works*/
+
+/*main*/
+.section {
+  position: relative;
+}
+
+h2 {
+  font-size: 55px;
+  font-weight: 800;
+  position: relative;
+  max-width: 1300px;
+  margin: 40px auto 0;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 400px;
+  display: block;
+  width: 50vw;
+  transform: translateX(-100%);
+  height: 1px;
+  background: #392100;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+  h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+/*works*/
+.h3text {
+  margin-top: 180px;
+}
+
+.works_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.works_img {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  background: #fff;
+}
+
+.item img {
+  max-width: 20%;
+}
+
+.contents_text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tool {
+  margin-top: 10px;
+  text-align: center;
+  color: #928680;
+}
+
+@media screen and (max-width: 767px) {
+  .works_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.item {
+  padding: 10px;
+  width: 20%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.item:not(:nth-child(3n + 3)) {
+  margin-left: 10%;
+}
+
+/*works*/
+
+.works_img {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  background: #fff;
+}
+
+.contents_text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tool {
+  margin: 10px 100px;
+  text-align: center;
+  color: #928680;
+}
+
+.works_img {
+  max-width: 450px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .works_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.works_read {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto 0;
+  max-width: 600px;
+}
+
+.works_read dl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works_read li {
+  padding: 40px 10px 10px;
+  border-bottom: 1px solid #928680;
+}
+
+.works_read dt {
+  width: 20%;
+}
+
+.works_read dd {
+  width: 75%;
+  line-height: 27px;
+}
+
+.works_text {
+  font-size: 16px;
+  margin: 20px 100px;
+  line-height: 60px;
+  position: relative;
+  height: 1px;
+  border-bottom: 1px solid #928680;
+  display: inline-block;
+  padding-bottom: 48px;
+}
+
+.site {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.salon_site {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.salon_pc {
+  max-width: 600px;
+}
+
+.pc {
+  max-width: 600px;
+}
+
+.sp {
+  max-width: 300px;
+}
